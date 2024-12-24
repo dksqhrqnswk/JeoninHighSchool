@@ -7,7 +7,7 @@ from UI_show.UI.Main_window_ui import Ui_Form
 from UI_show.Subject_select_window import Subject_select_window
 from UI_show.daylist_window import daylist_window
 from UI_show.record_window import record_Window
-from UI_show.Uploading_window import uploading_window
+#from UI_show.Uploading_window import uploading_window
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -28,9 +28,18 @@ class Main_Windows(QMainWindow, Ui_Form):
         # 창 크기를 고정 
         self.setFixedSize(self.size())
         self.Exam_bring = os.getcwd() +"/Exam_test/"
-        self.Exam_record_path = os.getcwd() +"/Exam_test/Exam_record.txt"
-        self.Wrong_list_path = os.getcwd() +"/word_test_project/Exam_test/"
-        self.Workbook_path = os.getcwd() +"/word_test_project/Workbook/d1_exam"
+        self.Exam_record_path = os.getcwd() +"\Exam_test\Exam_record.txt"
+        self.Wrong_list_path = os.getcwd() +"\Exam_test\ "
+        self.Workbook_path = os.getcwd() +"\Workbook\ "
+        def remove_whitespace(input_string):
+
+            return input_string.replace(" ", "").replace("\t", "").replace("\n", "").replace("\r", "")
+
+
+        
+        self.Workbook_path = remove_whitespace(self.Workbook_path)
+        self.Wrong_list_path = remove_whitespace(self.Wrong_list_path)
+
         # Initialize variables and connect signals to slots
         self.select_window = None
         self.daylist_window = None

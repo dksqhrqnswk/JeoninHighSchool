@@ -33,7 +33,8 @@ class test_Window(QMainWindow, Ui_Form):
         self.file_save=f"{self.Workbook_path}{self.select_day}"
         print(self.select_day,self.file_save)
         self.parents = parents
-        self.setWindowTitle(f"{self.select_day} 시험")  # 윈도우 제목 설정
+        self.setWindowTitle(f"{self.select_day} 시험")
+        self.a=0  # 윈도우 제목 설정
         # 창 크기를 고정 
         self.setFixedSize(self.size())
         self.correct_answer = 0
@@ -150,18 +151,26 @@ class test_Window(QMainWindow, Ui_Form):
                 self.wrong_answer += 1
                 Answer_check[key]=a
         
+    #    with open(self.Exam_record_path, 'a', encoding='utf-8') as file:
+     #       time = record_time + "\n"
+      #      file.write(time)
+       #     file.write(f"맞춘갯수{self.correct_answer}틀린갯수{self.wrong_answer}")
+        data_to_save = {
+            "record_time": record_time,
+            "correct_count": self.correct_answer,
+            "wrong_count": self.wrong_answer,
+        }
+    
+    # JSON 파일로 저장
         with open(self.Exam_record_path, 'a', encoding='utf-8') as file:
-            time = record_time + "\n"
-            file.write(time)
-        
+            json.dump(data_to_save, file, ensure_ascii=False, indent=4)  # JSON 파일로 저장
+            file.write("\n")
         self.Wrong_list_path = self.Wrong_list_path + record_time +".json"
         with open(self.Wrong_list_path, 'a', encoding='utf-8') as file:
            json.dump(Answer_check, file, indent=4)
-        f= open("Entity01.txt","w+")
-        for a in rlacl:
-            f.write(a)
+        #f= open("Entity01.txt","w+")
 
-        f.write(f"맞춘갯수{self.correct_answer}틀린갯수{self.wrong_answer}")
+        #f.write(f"맞춘갯수{self.correct_answer}틀린갯수{self.wrong_answer}")
         # 팝업 창 띄우기
         self.show_result_popup(self.correct_answer,self.wrong_answer)
 
@@ -180,8 +189,11 @@ class test_Window(QMainWindow, Ui_Form):
         event.accept()
 
     def showEvent(self, event):
-        super().showEvent(event)
-        self.load_words_from_json(self.file_save)
+        if self.a==0:
+            self.a=self.a+1
+
+            super().showEvent(event)
+            self.load_words_from_json(self.file_save)
         
 
 

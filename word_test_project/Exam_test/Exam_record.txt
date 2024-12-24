@@ -24,3 +24,119 @@
 2024112621_27_DAY1
 2024112621_27_DAY1
 2024112621_37_DAY1
+2024122419_53_DAY1
+2024122419_59_DAY1
+2024122420_4_DAY1
+2024122420_10_DAY1
+2024122420_19_DAY1
+2024122420_19_DAY1
+2024122420_19_DAY1
+2024122420_30_DAY1
+2024122420_31_DAY1
+2024122420_32_DAY1
+2024122420_35_DAY1
+
+맞춘갯수0틀린갯수392024122420_41_DAY1
+맞춘갯수0틀린갯수392024122420_41_DAY7
+맞춘갯수0틀린갯수392024122420_42_DAY1
+
+맞춘갯수0틀린갯수392024122420_43_DAY1
+2024122420_47_DAY9
+맞춘갯수0틀린갯수392024122420_48_DAY5
+맞춘갯수0틀린갯수39{
+    "record_time": "2024122420_56_DAY1",
+    "correct_count": 0,
+    "wrong_count": 39,
+    "Answer_check": {
+        "word0": "benefit",
+        "word1": "transform",
+        "word2": "determine",
+        "word3": "satisfy",
+        "word4": "launch",
+        "word5": "occur",
+        "word6": "question",
+        "word7": "victory",
+        "word8": "xenon",
+        "word9": "wonder",
+        "word10": "knowledge",
+        "word11": "initial",
+        "word12": "narrow",
+        "word13": "effort",
+        "word14": "consequence",
+        "word15": "harbor",
+        "word16": "participate",
+        "word17": "justify",
+        "word18": "respond",
+        "word19": "generate",
+        "word20": "unique",
+        "word21": "frequent",
+        "word22": "maintain",
+        "word23": "abandon",
+        "word24": "manifest",
+        "word25": "judge",
+        "word26": "inspire",
+        "word27": "facilitate",
+        "word28": "collaborate",
+        "word29": "zeal",
+        "word30": "define",
+        "word31": "glimpse",
+        "word32": "believe",
+        "word33": "hesitate",
+        "word34": "elevate",
+        "word35": "negotiate",
+        "word36": "linger",
+        "word37": "keen",
+        "word38": "anticipate"
+    }
+}
+{
+    "record_time": "2024122420_58_DAY1",
+    "correct_count": 0,
+    "wrong_count": 39,
+    "Answer_check": {
+        "word0": "occur",
+        "word1": "satisfy",
+        "word2": "victory",
+        "word3": "harbor",
+        "word4": "xenon",
+        "word5": "narrow",
+        "word6": "knowledge",
+        "word7": "question",
+        "word8": "initial",
+        "word9": "effort",
+        "word10": "consequence",
+        "word11": "transform",
+        "word12": "generate",
+        "word13": "participate",
+        "word14": "launch",
+        "word15": "abandon",
+        "word16": "determine",
+        "word17": "justify",
+        "word18": "benefit",
+        "word19": "unique",
+        "word20": "respond",
+        "word21": "frequent",
+        "word22": "maintain",
+        "word23": "wonder",
+        "word24": "glimpse",
+        "word25": "linger",
+        "word26": "manifest",
+        "word27": "hesitate",
+        "word28": "keen",
+        "word29": "anticipate",
+        "word30": "judge",
+        "word31": "collaborate",
+        "word32": "inspire",
+        "word33": "facilitate",
+        "word34": "define",
+        "word35": "believe",
+        "word36": "negotiate",
+        "word37": "elevate",
+        "word38": "zeal"
+    }
+}
+{
+    "record_time": "2024122420_58_DAY5",
+    "correct_count": 0,
+    "wrong_count": 39
+}

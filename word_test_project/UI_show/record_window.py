@@ -6,10 +6,11 @@ from PySide6.QtWidgets import (
     QPushButton,
     QListWidget,
 )
-class record_Window(QMainWindow,Ui_record):
-    def __init__(self,parents,path,bring): #init 공부하기
+class record_Window(QMainWindow,Ui_record,):
+    def __init__(self,parents,path,bring,): #init 공부하기
         super(record_Window, self).__init__()
         self.setupUi(self)
+    
         self.path = path
         self.parents = parents
         self.Exam_bring = bring

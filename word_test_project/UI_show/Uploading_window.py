@@ -1,5 +1,16 @@
+
+from UI_show.UI.Main_window_ui import Ui_Form
+from UI_show.Subject_select_window import Subject_select_window
+from UI_show.daylist_window import daylist_window
+from UI_show.record_window import record_Window
+from UI_show.Uploading_window import uploading_window
+from PySide6.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QPushButton,)
 from UI_show.UI.wordlist_ui import Ui_uploading_windows
 from PySide6.QtWidgets import (
+    wordlist_window,
     QMainWindow,
     QLabel
 )
